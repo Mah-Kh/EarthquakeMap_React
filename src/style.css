@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: #000;
+}
+#root {
+  max-width: 1500px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.countainer-lg {
+  margin: 10px;
+}
+
+/* Markers */
+.marker {
+  border-radius: 50%;
+  cursor: pointer;
+}
+.s-marker,
+.small {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(108, 183, 46, 0.9);
+}
+.m-marker,
+.medium {
+  width: 16px;
+  height: 16px;
+  background-color: rgb(249, 181, 56);
+}
+.l-marker,
+.large {
+  width: 18px;
+  height: 18px;
+  background-color: rgba(222, 92, 54, 1);
+}
+.xl-marker,
+.xlarge {
+  width: 21px;
+  height: 21px;
+  background-color: rgb(161, 29, 29);
+}
+.xxl-marker,
+.xxlarge {
+  width: 25px;
+  height: 25px;
+  background-color: rgb(91, 3, 107);
+}
+/* END Markers */
+
+/* Map */
+.map-container {
+  height: 96vh;
+  position: relative;
+  padding: 0;
+}
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  border: 1px solid #000;
+}
+.mapboxgl-canvas {
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+/* END MAP */
+
+/* Map Info */
+.map-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  padding: 10px;
+  font-size: 12px;
+  border-left: 1px solid #000;
+  border-top: 1px solid #000;
+}
+.map-info > div {
+  display: flex;
+  align-items: center;
+  margin: 2.5px auto;
+}
+.map-info > div > span {
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+/* End Map Info*/
+
+/* Form */
+.form-container {
+  padding: 20px;
+}
+.form-container h4 {
+  color: #fff;
+  margin-bottom: 60px;
+}
+form input,
+form select {
+  width: 70%;
+}
+form label {
+  width: 30%;
+  color: #fff;
+}
+.time > div,
+.mag > div,
+.place {
+  margin: 32px 0;
+}
+.btn-container {
+  display: flex;
+  margin-top: 60px;
+}
+.btn-container input {
+  width: auto;
+  margin-right: 20px;
+}
+.mapboxgl-popup-content > h3 {
+  font-size: 1rem;
+}
